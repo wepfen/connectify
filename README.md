@@ -1,6 +1,6 @@
 # Connectify: Useful Environment Variable Setter
 
-This Bash script sets the following environment variables: `$address`, `$target_address`, `$setup_address`, `$rpc`, `$target`.
+This Bash script sets the following environment variables: `$PKEY`, `$TARGET`, `$SETUP`, `$RPC`.
 
 It retrieves connection information from a specified IP and port, parses the JSON response, and sets environment variables accordingly. This script is particularly useful for configuring environment variables related to Hack The Box (HTB), Hacken Proof, Blockchain, Solidity, and Foundry.
 
@@ -17,6 +17,12 @@ sudo apt install jq
 ```bash
 # Example installation using yum (for CentOS/RHEL)
 sudo yum install jq
+```
+
+```bash
+# Example installation using yum (for Arch based distros)
+yay -S jq
+yay -S curl
 ```
 
 ## Usage
