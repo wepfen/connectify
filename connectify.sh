@@ -29,14 +29,19 @@ if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
             setup_address=$(echo "$response" | jq -r '.setupAddress')
 
             # Set environment variables
-            export private_key="$private_key"
-            export address="$address"
-            export target_address="$target_address"
-            export setup_address="$setup_address"
-            export rpc="http://${ip_port}/rpc"
-            export target="$target_address"
+            export PKEY="$private_key"
+            export ADDRESS="$address"
+            export TARGET="$target_address"
+            export SETUP="$setup_address"
+            export RPC="http://${ip_port}/rpc"
 
-            echo "Environment variables have been set:\n\$private_key, \$address, \$target_address, \$setup_address, \$rpc, \$target (short for target_address.)"
+            echo "
+\$PKEY=$PKEY
+\$ADDRESS=$ADDRESS 
+\$TARGET=$TARGET
+\$SETUP=$SETUP
+\$RPC=$RPC"
+
         else
             echo "Failed to retrieve connection info from $url."
         fi
