@@ -1,6 +1,6 @@
 # Connectify: Useful Environment Variable Setter
 
-This Bash script sets the following environment variables: `$PKEY`, `$TARGET`, `$SETUP`, `$RPC`.
+This Bash script sets the following environment variables: `$PKEY`, `$ADDRESS` `$TARGET`, `$SETUP`, `$RPC`.
 
 It retrieves connection information from a specified IP and port, parses the JSON response, and sets environment variables accordingly. This script is particularly useful for configuring environment variables related to Hack The Box (HTB), Hacken Proof, Blockchain, Solidity, and Foundry.
 
